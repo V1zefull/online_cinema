@@ -1,0 +1,42 @@
+.header{
+    height: 70px;
+    background: #3c4a60;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.container p{
+    font-size: 25px;
+}
+
+.navSearch{
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+
+.nav a{
+    transition: 0.3s;
+}
+
+.nav a:hover{
+    color: #9eb8e5;
+    cursor: pointer;
+}
