@@ -17,8 +17,11 @@
     font-size: 25px;
 }
 
+
+
+
 .navSearch{
-    width: 28%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
