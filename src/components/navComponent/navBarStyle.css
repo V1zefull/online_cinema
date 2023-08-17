@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+.title{
+    font-size: 27px;
+}
+
+
 .container{
     display: flex;
     width: 90%;
@@ -35,11 +40,16 @@
 
 }
 
-.nav a{
+.navA{
     transition: 0.3s;
+    color:white;
+    background: none;
+    border: none;
+    text-decoration: none;
 }
 
-.nav a:hover{
-    color: #9eb8e5;
+.navA:hover{
+    color: #789fe1;
     cursor: pointer;
 }
+

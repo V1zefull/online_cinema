@@ -1,38 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './navBarStyle.css'
 import {Autocomplete, TextField} from "@mui/material";
+import Login from '../../modal/login_modal/login'
 
 const NavBarComponent = () => {
+
+    const [AuthorizationVisible, setAuthorizationVisible] = useState(false)
+
     return (
         <div className="header">
            <div className="container">
                <div className="navSearch">
-                   <p>Online Cinema</p>
-                       <Autocomplete
-                           freeSolo
-                           id="custom-autocomplete"
-                           disableClearable
-                           sx={{width: 600, background:"white", borderRadius:1 }}
-                           options={top100Films.map((option) => option.title)}
-                           renderInput={(params) => (
-                               <TextField
-                                   {...params}
-                                   placeholder='Search'
-                                   InputProps={{
-                                       ...params.InputProps,
-                                       type: 'search',
-                                   }}
-                               />
-                           )}
-                       />
+                   <div className="title">Online Cinema</div>
+                   <Autocomplete
+                       freeSolo
+                       id="custom-autocomplete"
+                       disableClearable
+                       sx={{width: 550, background:"white", borderRadius:1 }}
+                       options={top100Films.map((option) => option.title)}
+                       renderInput={(params) => (
+                           <TextField
+                               {...params}
+                               placeholder='Search'
+                               InputProps={{
+                                   ...params.InputProps,
+                                   type: 'search',
+                               }}
+                           />
+                       )}
+                   />
                </div>
                <div className="nav">
-                   <a>Home</a>
-                   <a>Catalog</a>
-                   <a>About Us</a>
-                   <a>Login</a>
+                   <a className="navA">Home</a>
+                   <a className="navA">Catalog</a>
+                   <a className="navA">About Us</a>
+                   <button className="navA" onClick={()=> setAuthorizationVisible(true)}>Login</button>
                </div>
            </div>
+            <Login show={AuthorizationVisible} onHide={() => setAuthorizationVisible(false)} />
         </div>
     );
 };
