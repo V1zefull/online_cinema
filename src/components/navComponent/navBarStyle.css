@@ -3,6 +3,8 @@
     background: #3c4a60;
     display: flex;
     justify-content: center;
+    width: 100vw;
+    margin: 0 0 50px 0;
 }
 
 .title{
@@ -14,7 +16,7 @@
     display: flex;
     width: 90%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
 }
 
@@ -26,9 +28,9 @@
 
 
 .navSearch{
-    width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -51,5 +53,13 @@
 .navA:hover{
     color: #789fe1;
     cursor: pointer;
+}
+
+.searchBTN{
+    background: white;
+    border: none;
+    width: 5vw;
+    height: 50px;
+    border-radius: 5px;
 }
 

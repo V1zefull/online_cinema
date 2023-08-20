@@ -1,11 +1,13 @@
 import './App.css';
-import NavBarComponent from './components/navComponent/navBarComponent'
-
+import HomePage from "./page/home/homePage";
+import React, {useEffect, useState} from "react";
 function App() {
-  return (
-    <div>
-      <NavBarComponent/>
-    </div>
+
+
+    return (
+      <div>
+          <HomePage/>
+      </div>
   );
 }
 
